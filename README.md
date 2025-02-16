@@ -9,7 +9,7 @@ to save Session data in the browser
 <li>FastAPI</li>
 <li>SQLmodel (SQL ORM)</li>
 <li>passlib (Crypto library)</li>
-<li>josE</li>
+<li>jose</li>
 </ul>
 </details>
 
