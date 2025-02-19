@@ -75,7 +75,7 @@ async def get_current_active_user(current_user: UserInDB=Depends(get_current_use
     ).first()
     return user_data
 
-@app.post("/sign-up", response_model=Users)
+@app.post("/sign-up")
 async def signIn(user: Users):
     query = select(Users).where(Users.id == user.id).where(Users.email == user.email).where(Users.username == user.username)
     result = session.exec(query).fetchall()
